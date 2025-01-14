@@ -1,0 +1,48 @@
+---
+import Asesor from "./icons/Asesor.astro"
+
+   const uncomingServices = [
+   {
+        title: "Gestión de mesas",
+        description: "Con la herramienta de gestión de mesas de restaurantes de FoodLogic, podrás optimizar fácilmente la capacidad de tu restaurante",
+    },
+    {
+        title: "Botón WhatsApp flotante",
+        description: "Podras disfrutar de un boton flotante donde tus clientes se pueden comunicar contigo dando una rápida respuesta",
+    },
+    {
+        title: "Control de inventario",
+        description: "Podras tener el control total de tu inventario y asi no volverte a preocupar si algo no tiene stock",
+    },
+    {
+        title: "Factura electronica",
+        description: "Tu negocio contara y brindara el soporte a los usuarios que deseen factura electronica y no tendras que volverte a preocupar.",
+    },
+    ]
+---
+
+<section class="w-full py-12">
+    <div class="w-[1240px] mx-auto flex gap-5">
+        <div class="w-2/5">
+            <h2 class="text-4xl font-semibold">
+                Próximos servicios en <span class="text-[#FF5023] font-extrabold">FoodLogic</span>
+            </h2>
+            <p class="pb-9">Encontrarás estos servicios automáticamente dentro del año 2025 sin ningún costo adicional.</p>
+            <img class="rounded-lg w-2/3 border-[#ff5023] border-4 " src="/foodhome.jpg" alt="">
+        </div>
+        <div class="w-3/5 grid grid-cols-2 gap-4 h-full">
+            {uncomingServices.map(({ title, description }) => (
+                <div class="rounded-xl shadow-xl p-4" >
+                    <h3 class="text-2xl font-semibold">{title}</h3>
+                    <span class="text-pretty text-sm">{description}</span>
+                </div>
+            ))}
+            <p class="text-pretty font-semibold">Encontrarás estos servicios automáticamente dentro del año 2025 sin ningún costo adicional.</p>
+            <button class="p-2 bg-[#FF5023] rounded-lg items-center flex 
+            justify-center gap-3 text-white text-lg hover:scale-105 transition-all duration-300 shadow-xl">
+                Contacta con un asesor
+                <Asesor></Asesor>
+            </button>
+        </div>
+    </div>
+</section>

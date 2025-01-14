@@ -2,6 +2,8 @@
 
 import AboutUs from '../components/About-us.astro';
 import BannerHome from '../components/Banner-home.astro';
+import Plans from '../components/Plans.astro';
+import Proximamente from '../components/Proximamente.astro';
 import SectionContainer from '../components/SectionContainer.astro';
 import SliderHome from '../components/Slider-home.astro';
 import Testimonios from '../components/Testimonios.astro';
@@ -13,17 +15,25 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="aqui va un pequeño titulo que hable de la pagina" description="descripcion corta de la pagina">
 	<main>
-		<SectionContainer>
+		<SectionContainer id="inicio" >
 			<BannerHome ></BannerHome>
 		</SectionContainer>
 		<SectionContainer>
-			<SliderHome>
+			<SliderHome/>
 		</SectionContainer>
-		<SectionContainer>
+		<SectionContainer id="sobre-nosotros">
 			<AboutUs></AboutUs>
 		</SectionContainer>
-		
-			<Testimonios>a
-		</main>
+		<SectionContainer>
+			<Testimonios/>
+		</SectionContainer>
+		<SectionContainer>
+			<Proximamente></Proximamente>	
+		</SectionContainer>	
+		<SectionContainer id="nuestros-planes"> 
+			<Plans></Plans>
+		</SectionContainer>
+	
+	</main>
 </Layout>
 	
