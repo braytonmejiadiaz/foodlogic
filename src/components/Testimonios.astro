@@ -1,0 +1,33 @@
+---
+const test = [
+    {
+        imagen: "/antonia.webp",
+        title: "La Fonta",
+        description: "En la fecha tal se inscribieron y aumentaron sus ventas",
+    },
+    {
+        imagen: "/carobnel.webp",
+        title: "La Fonta",
+        description: "En la fecha tal se inscribieron y aumentaron sus ventas",
+    },
+    {
+        imagen: "/el paisa.webp",
+        title: "La Fonta",
+        description: "En la fecha tal se inscribieron y aumentaron sus ventas",
+    },
+];
+---
+
+<h2 class="text-center text-4xl font-semibold py-8">Empresas que confían en nosotros</h2>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4 w-[1240px] mx-auto py-8 ">
+    {test.map(({ description, imagen, title }) => (
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-all">
+            <img src={imagen} alt={title} class="w-full h-48 object-cover" />
+            <div class="p-4">
+                <h3 class="text-xl font-semibold text-gray-800">{title}</h3>
+                <p class="text-gray-600 mt-2">{description}</p>
+            </div>
+        </div>
+    ))}
+</div>

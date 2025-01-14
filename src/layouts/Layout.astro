@@ -1,3 +1,20 @@
+---
+// Supports weights 300-900
+import '@fontsource-variable/rubik';
+import '@fontsource/merriweather/300.css';
+import '@fontsource/merriweather/400.css';
+import '@fontsource/merriweather/700.css';
+import '@fontsource/merriweather/900.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import NewHeader from '../components/NewHeader.astro';
+
+interface Props {
+	title:string;
+	description:string;
+}
+const {title, description} = Astro.props
+---
 <!doctype html>
 <html lang="en">
 	<head>
@@ -5,18 +22,23 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>FoodLogic</title>
 	</head>
 	<body>
+		<NewHeader></NewHeader>
+		<!-- <Header></Header> -->
 		<slot />
+		<Footer></Footer>
 	</body>
 </html>
 
-<style>
+<style is:global>
 	html,
 	body {
+		
+		font-family: 'Merriweather', serif;
 		margin: 0;
-		width: 100%;
-		height: 100%;
+		display: flex;
+		flex-direction: column;
 	}
 </style>

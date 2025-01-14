@@ -1,0 +1,32 @@
+---
+import Carrito from "./icons/Carrito.astro";
+import Delivery from "./icons/Delivery.astro";
+import Mejora from "./icons/Mejora.astro";
+---
+
+<section class="shadow-[rgba(0,0,10,0.2)_2px_2px_10px_0px] flex w-full justify-center mt-9 py-8">
+    <div class="grid grid-cols-3 items-center w-[1240px] gap-6">
+        <div>
+            <div class="bg-yellow-300/70 flex float-start w-auto p-5 mr-5 rounded-full hover:scale-105 transition-all shadow-md">
+                <Carrito></Carrito>
+            </div>
+            <h3 class="text-3xl pb-2">Gestión integral</h3>
+            <p class="text-pretty">Administra todo tu negocio desde una sola plataforma</p>
+        </div>
+        <div >
+            <div class="bg-yellow-300/70 flex float-start w-auto p-5 mr-5 rounded-full hover:scale-105 transition-all shadow-md">
+                <Delivery/>
+            </div>
+            <h3 class="text-3xl pb-2">Procesos Eficientes</h3>
+            <p class="text-pretty">Automatiza tareas y ahorra tiempo</p>
+        </div>
+        <div >
+            <div class="bg-yellow-300/70 flex float-start w-auto p-5 mr-5 rounded-full hover:scale-105 transition-all shadow-md">
+                <Mejora></Mejora>
+            </div>
+            <h3 class="text-3xl pb-2">Mejora del Servicio</h3>
+            <p class="text-pretty">Ofrece una experiencia más rápida y personalizada.</p>
+        </div>
+        
+    </div>
+</section>

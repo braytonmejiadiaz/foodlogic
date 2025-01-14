@@ -1,0 +1,60 @@
+---
+import Logo from "./icons/Logo.astro";
+---
+
+<footer class="bg-[#090B2C] text-white/70 flex flex-col items-center justify-center py-5">
+    <div class="gap-5 flex justify-between items-start w-[1240px]">
+        <!-- Primer bloque con bordes y esquinas redondeadas -->
+        <div class="w-3/5 bg-[#090B37] p-5 rounded-lg relative ">
+            <!-- Esquina superior izquierda -->
+            <div class="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-white/60 rounded-tl-lg"></div>
+            <!-- Esquina superior derecha -->
+            <div class="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-white/60 rounded-tr-lg"></div>
+            <!-- Esquina inferior izquierda -->
+            <div class="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-white/60 rounded-bl-lg"></div>
+            <!-- Esquina inferior derecha -->
+            <div class="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-white/60 rounded-br-lg"></div>
+            <ul class="flex gap-2 justify-between underline ">
+                <li class="hover:scale-105 transition-all">Sobre nosotros</li>
+                <li class="hover:scale-105 transition-all">Nuestros planes</li>
+                <li class="hover:scale-105 transition-all">Contacto</li>
+                <li class="hover:scale-105 transition-all">Ingresar</li>
+                <li class="hover:scale-105 transition-all">Crear cuenta</li>
+            </ul>
+            <p class="pt-5 text-sm">Una solución única para cualquier negocio gastronómico, no dejes pasar esta oportunidad y unete a foodlogic </p>
+
+        </div>
+        
+        <!-- Segundo bloque con bordes y esquinas redondeadas -->
+        <div class="flex flex-col items-center w-2/5 bg-[#111330] p-4 relative rounded-lg">
+            <!-- Esquina superior izquierda -->
+            <div class="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-white/60 rounded-tl-lg"></div>
+            <!-- Esquina superior derecha -->
+            <div class="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-white/60 rounded-tr-lg"></div>
+            <!-- Esquina inferior izquierda -->
+            <div class="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-white/60 rounded-bl-lg"></div>
+            <!-- Esquina inferior derecha -->
+            <div class="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-white/60 rounded-br-lg"></div>
+
+                <Logo></Logo>
+     
+        </div>
+    </div>
+
+    <!-- Tercer bloque con bordes y esquinas redondeadas -->
+    <div class="bg-[#111330] gap-5 flex justify-between mt-5 p-3 w-[1240px] relative rounded-lg">
+        <!-- Esquina superior izquierda -->
+        <div class="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-white/60 rounded-tl-lg"></div>
+        <!-- Esquina superior derecha -->
+        <div class="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-white/60 rounded-tr-lg"></div>
+        <!-- Esquina inferior izquierda -->
+        <div class="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-white/60 rounded-bl-lg"></div>
+        <!-- Esquina inferior derecha -->
+        <div class="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-white/60 rounded-br-lg"></div>
+        <ul class="flex gap-3 text-sm">
+            <li>Términos y condiciones</li>
+            <li>Políticas de privacidad</li>
+        </ul>
+        <p class="text-sm">Desarrollado por Brayton, todos los derechos reservados</p>
+    </div>
+</footer>
